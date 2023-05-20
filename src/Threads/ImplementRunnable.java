@@ -1,3 +1,5 @@
+package Threads;
+
 /**
  * @author E.Parominsky 18/05/2023 08:58
  */

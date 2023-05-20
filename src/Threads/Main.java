@@ -1,3 +1,5 @@
+package Threads;
+
 /**
  * @author E.Parominsky ${DATE} ${TIME}
  */
@@ -15,8 +17,8 @@ public class Main {
 //            System.out.println(e.getStackTrace());
 //        }
 
-//        ServerThread serverThread = new ServerThread("Server1");
-//        ServerThread serverThread2 = new ServerThread("Server2");
+//        Threads.ServerThread serverThread = new Threads.ServerThread("Server1");
+//        Threads.ServerThread serverThread2 = new Threads.ServerThread("Server2");
 //        serverThread2.setPriority(Thread.MAX_PRIORITY);
 //        serverThread2.start();
 //        serverThread.start();
