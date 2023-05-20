@@ -9,7 +9,7 @@ public class BufferStream {
     public static void main(String[] args) {
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader("example6.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("example6.txt"), 1024);
 
             BufferedWriter bw = new BufferedWriter(new FileWriter("example7.txt"));
             String line = null;
