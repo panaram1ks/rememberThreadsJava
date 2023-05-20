@@ -8,14 +8,25 @@ public class CharacterStream {
             OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream("example4.txt") /*, "ASCII"*/);
             InputStreamReader in = new InputStreamReader(new FileInputStream("example.txt"));
 
-            System.out.println(out.getEncoding());
-
-            out.write("hello character3");
-//            out.close();
+            out.write("reading using InputStreamReader");
             out.flush();
+            out.close();
 
-            out.write("another string");
-            out.flush();
+            int data = in.read();
+            while (data != -1){
+                System.out.println((char) data);
+                data = in.read();
+            }
+
+
+//            System.out.println(out.getEncoding());
+//
+//            out.write("hello character3");
+////            out.close();
+//            out.flush();
+//
+//            out.write("another string");
+//            out.flush();
 
         }catch (Exception e){
             System.out.println(e.toString());
