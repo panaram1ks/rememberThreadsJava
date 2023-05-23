@@ -22,6 +22,8 @@ public class UDPClient {
 
             //Send packet
             InetAddress serverAddress = InetAddress.getByName("localhost");
+            clientSocket.setSoTimeout(3000);
+
             DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, serverAddress, 9090);
             clientSocket.send(sendPacket);
 
